@@ -11,7 +11,7 @@ Source0:        https://github.com/jurplel/qView/releases/download/%{version}/qV
 BuildRequires:  qt5-devel
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  qmake5
-BuildRequires:  qt5-tools
+BuildRequires:  qt5-qttools
 BuildRequires:  qt5-qttranslations
 BuildRequires:  qt5-linguist-tools
 
