@@ -19,7 +19,7 @@ BuildRequires:  qt5-linguist-tools
 Qt-based image viewer designed to be practical and minimal.
 
 %prep
-%setup -qn qView
+%setup -qn qView-%{version}
 
 %build
 %qmake_qt5 PREFIX=/usr
