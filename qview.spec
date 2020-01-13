@@ -1,7 +1,7 @@
 %define upstream_name qView
 
 Name:           qview
-Version:        2.0
+Version:        3.0
 Release:        1
 Summary:        Simple Qt-based image viewer
 License:        GPL3
@@ -23,7 +23,7 @@ BuildRequires:  qt5-linguist-tools
 Qt-based image viewer designed to be practical and minimal.
 
 %prep
-%setup -qn %{upstream_name}-%{version}
+%setup -qn %{upstream_name}
 
 %build
 %qmake_qt5 PREFIX=/usr
