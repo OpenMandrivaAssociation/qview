@@ -37,4 +37,5 @@ mkdir -p %{buildroot}%{_bindir}
 %{_bindir}/%{name}
 %{_datadir}/applications/qView.desktop
 %{_datadir}/licenses/%{name}
+%{_datadir}/metainfo/qview.appdata.xml
 %{_iconsdir}/hicolor/*/apps/%{name}.*
