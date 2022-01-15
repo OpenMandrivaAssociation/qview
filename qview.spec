@@ -1,7 +1,7 @@
 %define upstream_name qView
 
 Name:           qview
-Version:        4.0
+Version:        5.0
 Release:        1
 Summary:        Simple Qt-based image viewer
 License:        GPL3
@@ -35,7 +35,9 @@ mkdir -p %{buildroot}%{_bindir}
 
 %files
 %{_bindir}/%{name}
-%{_datadir}/applications/qView.desktop
+%{_datadir}/applications/com.interversehq.qView.desktop
 %{_datadir}/licenses/%{name}
-%{_datadir}/metainfo/qview.appdata.xml
-%{_iconsdir}/hicolor/*/apps/%{name}.*
+%{_datadir}/metainfo/com.interversehq.qView.appdata.xml
+%{_iconsdir}/hicolor/symbolic/apps/com.interversehq.qView-symbolic.svg
+%{_iconsdir}/hicolor/scalable/apps/com.interversehq.qView.svg
+%{_iconsdir}/hicolor/*x*/apps/com.interversehq.qView.png
