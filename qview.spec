@@ -2,7 +2,7 @@
 
 Name:           qview
 Version:        5.0
-Release:        1
+Release:        2
 Summary:        Simple Qt-based image viewer
 License:        GPL3
 Group:          Graphics
