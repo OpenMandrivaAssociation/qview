@@ -14,6 +14,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Concurrent) >= 5.9
 BuildRequires:  pkgconfig(Qt5Widgets) >= 5.9
 BuildRequires:  pkgconfig(Qt5Network) >= 5.9
+BuildRequires:  pkgconfig(Qt5X11Extras)
 BuildRequires:  qmake5
 BuildRequires:  qt5-qttools
 BuildRequires:  qt5-qttranslations
