@@ -1,8 +1,8 @@
 %define upstream_name qView
 
 Name:           qview
-Version:        5.0
-Release:        2
+Version:        6.0
+Release:        1
 Summary:        Simple Qt-based image viewer
 License:        GPL3
 Group:          Graphics
