@@ -2,23 +2,23 @@
 
 Name:           qview
 Version:        6.0
-Release:        1
+Release:        2
 Summary:        Simple Qt-based image viewer
 License:        GPL3
 Group:          Graphics
 URL:            https://interversehq.com/qview
 Source0:        https://github.com/jurplel/qView/releases/download/%{version}/%{upstream_name}-%{version}.tar.gz
 
-BuildRequires:  qt5-devel
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5Concurrent) >= 5.9
-BuildRequires:  pkgconfig(Qt5Widgets) >= 5.9
-BuildRequires:  pkgconfig(Qt5Network) >= 5.9
-BuildRequires:  pkgconfig(Qt5X11Extras)
-BuildRequires:  qmake5
-BuildRequires:  qt5-qttools
-BuildRequires:  qt5-qttranslations
-BuildRequires:  qt5-linguist-tools
+#BuildRequires:  qt5-devel
+BuildRequires:  cmake(Qt6Core)
+BuildRequires:  cmake(Qt6Concurrent)
+BuildRequires:  cmake(Qt6Widgets)
+BuildRequires:  cmake(Qt6Network)
+#BuildRequires:  pkgconfig(Qt5X11Extras)
+BuildRequires:  qmake-qt6
+BuildRequires:  qt6-qttools
+#BuildRequires:  qt5-qttranslations
+BuildRequires:  cmake(Qt6Linguist)
 
 %description
 Qt-based image viewer designed to be practical and minimal.
@@ -27,7 +27,7 @@ Qt-based image viewer designed to be practical and minimal.
 %setup -qn %{upstream_name}
 
 %build
-%qmake_qt5 PREFIX=/usr
+qmake-qt6 PREFIX=/usr
 %make_build
 
 %install
