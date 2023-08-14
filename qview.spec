@@ -1,4 +1,5 @@
 %define upstream_name qView
+%define _empty_manifest_terminate_build 0
 
 Name:           qview
 Version:        6.0
