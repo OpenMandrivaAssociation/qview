@@ -2,7 +2,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:           qview
-Version:        6.1
+Version:        7.1
 Release:        1
 Summary:        Simple Qt-based image viewer
 License:        GPL3
