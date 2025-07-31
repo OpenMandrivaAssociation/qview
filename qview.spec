@@ -25,7 +25,7 @@ BuildRequires:  cmake(Qt6Linguist)
 Qt-based image viewer designed to be practical and minimal.
 
 %prep
-%setup -qn %{upstream_name}
+%autosetup -n qView-%{version} -p1
 
 %build
 qmake-qt6 PREFIX=/usr
